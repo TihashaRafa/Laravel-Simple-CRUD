@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [productController::class, 'index'])->name('products.index');
+Route::get('/create', [productController::class,'create'])->name('products.create');
